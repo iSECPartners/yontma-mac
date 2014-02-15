@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E209807518B63DE10070599F /* LaunchPlaceholder.xib in Resources */ = {isa = PBXBuildFile; fileRef = E209807418B63DE10070599F /* LaunchPlaceholder.xib */; };
+		E21D289618B6554400F30FB1 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21D289518B6554400F30FB1 /* ScriptingBridge.framework */; };
+		E21D289A18B65D0F00F30FB1 /* CommandRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = E21D289918B65D0F00F30FB1 /* CommandRunner.m */; };
+		E23EB64F18B5B6CD00536C2D /* LaptopErrorsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E23EB64E18B5B6CD00536C2D /* LaptopErrorsDataSource.m */; };
+		E23EC95918B263A60062D6FD /* AppState.m in Sources */ = {isa = PBXBuildFile; fileRef = E23EC95818B263A60062D6FD /* AppState.m */; };
+		E23EC95C18B26D790062D6FD /* PrefWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23EC95B18B26D790062D6FD /* PrefWindowController.m */; };
+		E23EC96118B2914D0062D6FD /* PowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E23EC96018B2914D0062D6FD /* PowerController.m */; };
+		E23EC96318B2917F0062D6FD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23EC96218B2917F0062D6FD /* IOKit.framework */; };
+		E26423BD18B3C8B000D796D0 /* EthernetAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E26423BC18B3C8B000D796D0 /* EthernetAdaptor.m */; };
+		E26423C018B3DC9B00D796D0 /* EthernetAdaptorsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E26423BF18B3DC9B00D796D0 /* EthernetAdaptorsDataSource.m */; };
+		E26423C518B404B800D796D0 /* MetaController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26423C418B404B800D796D0 /* MetaController.m */; };
+		E26423C618B4083700D796D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28B6F5F18AFC30100B2B312 /* Foundation.framework */; };
+		E26423C918B4103E00D796D0 /* Hibernator.m in Sources */ = {isa = PBXBuildFile; fileRef = E26423C818B4103E00D796D0 /* Hibernator.m */; };
+		E26423CC18B414B600D796D0 /* EthernetAdaptorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E26423CB18B414B600D796D0 /* EthernetAdaptorUtilities.m */; };
+		E26423D318B50A9C00D796D0 /* EventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E26423D218B50A9C00D796D0 /* EventLogger.m */; };
+		E281347118B79F67008B20D1 /* StartupLaunchController.m in Sources */ = {isa = PBXBuildFile; fileRef = E281347018B79F67008B20D1 /* StartupLaunchController.m */; };
+		E281347218B807FB008B20D1 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = E28B6F6F18AFC30100B2B312 /* Preferences.xib */; };
+		E2822D2A18BD878700977C0A /* yontma.iconset in Resources */ = {isa = PBXBuildFile; fileRef = E2822D2918BD878700977C0A /* yontma.iconset */; };
+		E28B6F5B18AFC30100B2B312 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28B6F5A18AFC30100B2B312 /* Cocoa.framework */; };
+		E28B6F6518AFC30100B2B312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E28B6F6318AFC30100B2B312 /* InfoPlist.strings */; };
+		E28B6F6718AFC30100B2B312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B6F6618AFC30100B2B312 /* main.m */; };
+		E28B6F6B18AFC30100B2B312 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E28B6F6918AFC30100B2B312 /* Credits.rtf */; };
+		E28B6F6E18AFC30100B2B312 /* yontmaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B6F6D18AFC30100B2B312 /* yontmaAppDelegate.m */; };
+		E28B6F7318AFC30100B2B312 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28B6F7218AFC30100B2B312 /* Images.xcassets */; };
+		E28B6F9018AFC38100B2B312 /* StatusBarIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = E28B6F8F18AFC38100B2B312 /* StatusBarIcon.m */; };
+		E28B90DF18C3D19B009030E4 /* StatusDisabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E28B90DD18C3D19B009030E4 /* StatusDisabled@2x.png */; };
+		E28B90E018C3D19B009030E4 /* StatusEnabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E28B90DE18C3D19B009030E4 /* StatusEnabled@2x.png */; };
+		E29CAB4E18B221B900B99B1E /* StatusEnabled.png in Resources */ = {isa = PBXBuildFile; fileRef = E29CAB4C18B221B900B99B1E /* StatusEnabled.png */; };
+		E29CAB5118B22F8700B99B1E /* StatusDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = E29CAB5018B22F8700B99B1E /* StatusDisabled.png */; };
+		E2D2EB1218B6CB400093D3FD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2EB1118B6CB400093D3FD /* Security.framework */; };
+		E2D2EB1518B6D63E0093D3FD /* PowerSettingsQuestionTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D2EB1418B6D63E0093D3FD /* PowerSettingsQuestionTextField.m */; };
+		E2D7834A18B2B1DD0094C86B /* ScreenSaverController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D7834918B2B1DD0094C86B /* ScreenSaverController.m */; };
+		E2D7834D18B2B5150094C86B /* EthernetController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D7834C18B2B5150094C86B /* EthernetController.m */; };
+		E2D7834F18B2B6C20094C86B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D7834E18B2B6C20094C86B /* SystemConfiguration.framework */; };
+		E2F0D71E18B581E3008EA793 /* LaptopSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F0D71D18B581E3008EA793 /* LaptopSettingsController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E209807418B63DE10070599F /* LaunchPlaceholder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchPlaceholder.xib; sourceTree = "<group>"; };
+		E21D289518B6554400F30FB1 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		E21D289718B6581F00F30FB1 /* SystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemEvents.h; sourceTree = "<group>"; };
+		E21D289818B65D0F00F30FB1 /* CommandRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandRunner.h; sourceTree = "<group>"; };
+		E21D289918B65D0F00F30FB1 /* CommandRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandRunner.m; sourceTree = "<group>"; };
+		E23EB64D18B5B6CD00536C2D /* LaptopErrorsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaptopErrorsDataSource.h; sourceTree = "<group>"; };
+		E23EB64E18B5B6CD00536C2D /* LaptopErrorsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaptopErrorsDataSource.m; sourceTree = "<group>"; };
+		E23EC95718B263A60062D6FD /* AppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppState.h; sourceTree = "<group>"; };
+		E23EC95818B263A60062D6FD /* AppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppState.m; sourceTree = "<group>"; };
+		E23EC95A18B26D790062D6FD /* PrefWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefWindowController.h; sourceTree = "<group>"; };
+		E23EC95B18B26D790062D6FD /* PrefWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefWindowController.m; sourceTree = "<group>"; };
+		E23EC95F18B2914D0062D6FD /* PowerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerController.h; sourceTree = "<group>"; };
+		E23EC96018B2914D0062D6FD /* PowerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerController.m; sourceTree = "<group>"; };
+		E23EC96218B2917F0062D6FD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		E26423BB18B3C8B000D796D0 /* EthernetAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EthernetAdaptor.h; sourceTree = "<group>"; };
+		E26423BC18B3C8B000D796D0 /* EthernetAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EthernetAdaptor.m; sourceTree = "<group>"; };
+		E26423BE18B3DC9B00D796D0 /* EthernetAdaptorsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EthernetAdaptorsDataSource.h; sourceTree = "<group>"; };
+		E26423BF18B3DC9B00D796D0 /* EthernetAdaptorsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EthernetAdaptorsDataSource.m; sourceTree = "<group>"; };
+		E26423C318B404B800D796D0 /* MetaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaController.h; sourceTree = "<group>"; };
+		E26423C418B404B800D796D0 /* MetaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaController.m; sourceTree = "<group>"; };
+		E26423C718B4103E00D796D0 /* Hibernator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hibernator.h; sourceTree = "<group>"; };
+		E26423C818B4103E00D796D0 /* Hibernator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hibernator.m; sourceTree = "<group>"; };
+		E26423CA18B414B600D796D0 /* EthernetAdaptorUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EthernetAdaptorUtilities.h; sourceTree = "<group>"; };
+		E26423CB18B414B600D796D0 /* EthernetAdaptorUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EthernetAdaptorUtilities.m; sourceTree = "<group>"; };
+		E26423D118B50A9C00D796D0 /* EventLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogger.h; sourceTree = "<group>"; };
+		E26423D218B50A9C00D796D0 /* EventLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLogger.m; sourceTree = "<group>"; };
+		E281346F18B79F67008B20D1 /* StartupLaunchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartupLaunchController.h; sourceTree = "<group>"; };
+		E281347018B79F67008B20D1 /* StartupLaunchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartupLaunchController.m; sourceTree = "<group>"; };
+		E2822D2918BD878700977C0A /* yontma.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = yontma.iconset; sourceTree = "<group>"; };
+		E28B6F5718AFC30100B2B312 /* You'll Never Take Me Alive!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "You'll Never Take Me Alive!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28B6F5A18AFC30100B2B312 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E28B6F5D18AFC30100B2B312 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E28B6F5E18AFC30100B2B312 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E28B6F5F18AFC30100B2B312 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E28B6F6218AFC30100B2B312 /* You'll Never Take Me Alive!-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "You'll Never Take Me Alive!-Info.plist"; sourceTree = "<group>"; };
+		E28B6F6418AFC30100B2B312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E28B6F6618AFC30100B2B312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E28B6F6818AFC30100B2B312 /* You'll Never Take Me Alive!-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "You'll Never Take Me Alive!-Prefix.pch"; sourceTree = "<group>"; };
+		E28B6F6A18AFC30100B2B312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E28B6F6C18AFC30100B2B312 /* yontmaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yontmaAppDelegate.h; sourceTree = "<group>"; };
+		E28B6F6D18AFC30100B2B312 /* yontmaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yontmaAppDelegate.m; sourceTree = "<group>"; };
+		E28B6F7018AFC30100B2B312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Preferences.xib; sourceTree = "<group>"; };
+		E28B6F7218AFC30100B2B312 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E28B6F7918AFC30100B2B312 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E28B6F8E18AFC38100B2B312 /* StatusBarIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarIcon.h; sourceTree = "<group>"; };
+		E28B6F8F18AFC38100B2B312 /* StatusBarIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarIcon.m; sourceTree = "<group>"; };
+		E28B90DD18C3D19B009030E4 /* StatusDisabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusDisabled@2x.png"; sourceTree = "<group>"; };
+		E28B90DE18C3D19B009030E4 /* StatusEnabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusEnabled@2x.png"; sourceTree = "<group>"; };
+		E29CAB4C18B221B900B99B1E /* StatusEnabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusEnabled.png; sourceTree = "<group>"; };
+		E29CAB5018B22F8700B99B1E /* StatusDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusDisabled.png; sourceTree = "<group>"; };
+		E2D2EB1118B6CB400093D3FD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E2D2EB1318B6D63E0093D3FD /* PowerSettingsQuestionTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSettingsQuestionTextField.h; sourceTree = "<group>"; };
+		E2D2EB1418B6D63E0093D3FD /* PowerSettingsQuestionTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSettingsQuestionTextField.m; sourceTree = "<group>"; };
+		E2D7834818B2B1DD0094C86B /* ScreenSaverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSaverController.h; sourceTree = "<group>"; };
+		E2D7834918B2B1DD0094C86B /* ScreenSaverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSaverController.m; sourceTree = "<group>"; };
+		E2D7834B18B2B5150094C86B /* EthernetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EthernetController.h; sourceTree = "<group>"; };
+		E2D7834C18B2B5150094C86B /* EthernetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EthernetController.m; sourceTree = "<group>"; };
+		E2D7834E18B2B6C20094C86B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E2F0D71A18B580C9008EA793 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		E2F0D71C18B581E3008EA793 /* LaptopSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaptopSettingsController.h; sourceTree = "<group>"; };
+		E2F0D71D18B581E3008EA793 /* LaptopSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaptopSettingsController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E28B6F5418AFC30100B2B312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D2EB1218B6CB400093D3FD /* Security.framework in Frameworks */,
+				E21D289618B6554400F30FB1 /* ScriptingBridge.framework in Frameworks */,
+				E26423C618B4083700D796D0 /* Foundation.framework in Frameworks */,
+				E2D7834F18B2B6C20094C86B /* SystemConfiguration.framework in Frameworks */,
+				E23EC96318B2917F0062D6FD /* IOKit.framework in Frameworks */,
+				E28B6F5B18AFC30100B2B312 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E23EB65018B5B6D800536C2D /* LaptopSettings */ = {
+			isa = PBXGroup;
+			children = (
+				E23EB64D18B5B6CD00536C2D /* LaptopErrorsDataSource.h */,
+				E23EB64E18B5B6CD00536C2D /* LaptopErrorsDataSource.m */,
+				E2F0D71C18B581E3008EA793 /* LaptopSettingsController.h */,
+				E2F0D71D18B581E3008EA793 /* LaptopSettingsController.m */,
+			);
+			name = LaptopSettings;
+			sourceTree = "<group>";
+		};
+		E26423C118B4020000D796D0 /* Ethernet */ = {
+			isa = PBXGroup;
+			children = (
+				E2D7834B18B2B5150094C86B /* EthernetController.h */,
+				E2D7834C18B2B5150094C86B /* EthernetController.m */,
+				E26423BB18B3C8B000D796D0 /* EthernetAdaptor.h */,
+				E26423BC18B3C8B000D796D0 /* EthernetAdaptor.m */,
+				E26423BE18B3DC9B00D796D0 /* EthernetAdaptorsDataSource.h */,
+				E26423BF18B3DC9B00D796D0 /* EthernetAdaptorsDataSource.m */,
+				E26423CA18B414B600D796D0 /* EthernetAdaptorUtilities.h */,
+				E26423CB18B414B600D796D0 /* EthernetAdaptorUtilities.m */,
+			);
+			name = Ethernet;
+			sourceTree = "<group>";
+		};
+		E26423C218B4049900D796D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E23EB65018B5B6D800536C2D /* LaptopSettings */,
+				E26423C118B4020000D796D0 /* Ethernet */,
+				E23EC95F18B2914D0062D6FD /* PowerController.h */,
+				E23EC96018B2914D0062D6FD /* PowerController.m */,
+				E2D7834818B2B1DD0094C86B /* ScreenSaverController.h */,
+				E2D7834918B2B1DD0094C86B /* ScreenSaverController.m */,
+				E26423C318B404B800D796D0 /* MetaController.h */,
+				E26423C418B404B800D796D0 /* MetaController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E26423D018B4F9AF00D796D0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E2822D2918BD878700977C0A /* yontma.iconset */,
+				E209807418B63DE10070599F /* LaunchPlaceholder.xib */,
+				E29CAB5018B22F8700B99B1E /* StatusDisabled.png */,
+				E29CAB4C18B221B900B99B1E /* StatusEnabled.png */,
+				E28B90DD18C3D19B009030E4 /* StatusDisabled@2x.png */,
+				E28B90DE18C3D19B009030E4 /* StatusEnabled@2x.png */,
+				E28B6F8E18AFC38100B2B312 /* StatusBarIcon.h */,
+				E28B6F8F18AFC38100B2B312 /* StatusBarIcon.m */,
+				E28B6F6F18AFC30100B2B312 /* Preferences.xib */,
+				E23EC95A18B26D790062D6FD /* PrefWindowController.h */,
+				E23EC95B18B26D790062D6FD /* PrefWindowController.m */,
+				E2D2EB1318B6D63E0093D3FD /* PowerSettingsQuestionTextField.h */,
+				E2D2EB1418B6D63E0093D3FD /* PowerSettingsQuestionTextField.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E28B6F4E18AFC30100B2B312 = {
+			isa = PBXGroup;
+			children = (
+				E28B6F6018AFC30100B2B312 /* You'll Never Take Me Alive! */,
+				E28B6F5918AFC30100B2B312 /* Frameworks */,
+				E28B6F5818AFC30100B2B312 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E28B6F5818AFC30100B2B312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E28B6F5718AFC30100B2B312 /* You'll Never Take Me Alive!.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E28B6F5918AFC30100B2B312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D2EB1118B6CB400093D3FD /* Security.framework */,
+				E21D289518B6554400F30FB1 /* ScriptingBridge.framework */,
+				E2F0D71A18B580C9008EA793 /* Carbon.framework */,
+				E2D7834E18B2B6C20094C86B /* SystemConfiguration.framework */,
+				E23EC96218B2917F0062D6FD /* IOKit.framework */,
+				E28B6F5A18AFC30100B2B312 /* Cocoa.framework */,
+				E28B6F7918AFC30100B2B312 /* XCTest.framework */,
+				E28B6F5C18AFC30100B2B312 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E28B6F5C18AFC30100B2B312 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E28B6F5D18AFC30100B2B312 /* AppKit.framework */,
+				E28B6F5E18AFC30100B2B312 /* CoreData.framework */,
+				E28B6F5F18AFC30100B2B312 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E28B6F6018AFC30100B2B312 /* You'll Never Take Me Alive! */ = {
+			isa = PBXGroup;
+			children = (
+				E26423C218B4049900D796D0 /* Controllers */,
+				E26423D018B4F9AF00D796D0 /* UI */,
+				E28B6F6C18AFC30100B2B312 /* yontmaAppDelegate.h */,
+				E28B6F6D18AFC30100B2B312 /* yontmaAppDelegate.m */,
+				E23EC95718B263A60062D6FD /* AppState.h */,
+				E23EC95818B263A60062D6FD /* AppState.m */,
+				E26423D118B50A9C00D796D0 /* EventLogger.h */,
+				E26423D218B50A9C00D796D0 /* EventLogger.m */,
+				E21D289718B6581F00F30FB1 /* SystemEvents.h */,
+				E26423C718B4103E00D796D0 /* Hibernator.h */,
+				E26423C818B4103E00D796D0 /* Hibernator.m */,
+				E21D289818B65D0F00F30FB1 /* CommandRunner.h */,
+				E21D289918B65D0F00F30FB1 /* CommandRunner.m */,
+				E281346F18B79F67008B20D1 /* StartupLaunchController.h */,
+				E281347018B79F67008B20D1 /* StartupLaunchController.m */,
+				E28B6F6118AFC30100B2B312 /* Supporting Files */,
+			);
+			path = "You'll Never Take Me Alive!";
+			sourceTree = "<group>";
+		};
+		E28B6F6118AFC30100B2B312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E28B6F7218AFC30100B2B312 /* Images.xcassets */,
+				E28B6F6218AFC30100B2B312 /* You'll Never Take Me Alive!-Info.plist */,
+				E28B6F6318AFC30100B2B312 /* InfoPlist.strings */,
+				E28B6F6618AFC30100B2B312 /* main.m */,
+				E28B6F6818AFC30100B2B312 /* You'll Never Take Me Alive!-Prefix.pch */,
+				E28B6F6918AFC30100B2B312 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E28B6F5618AFC30100B2B312 /* You'll Never Take Me Alive! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28B6F8818AFC30100B2B312 /* Build configuration list for PBXNativeTarget "You'll Never Take Me Alive!" */;
+			buildPhases = (
+				E28B6F5318AFC30100B2B312 /* Sources */,
+				E28B6F5418AFC30100B2B312 /* Frameworks */,
+				E28B6F5518AFC30100B2B312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "You'll Never Take Me Alive!";
+			productName = "You'll Never Take Me Alive!";
+			productReference = E28B6F5718AFC30100B2B312 /* You'll Never Take Me Alive!.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E28B6F4F18AFC30100B2B312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = yontma;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "iSEC Partners";
+				TargetAttributes = {
+					E28B6F5618AFC30100B2B312 = {
+						DevelopmentTeam = 6HB49H6SJU;
+					};
+				};
+			};
+			buildConfigurationList = E28B6F5218AFC30100B2B312 /* Build configuration list for PBXProject "You'll Never Take Me Alive!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E28B6F4E18AFC30100B2B312;
+			productRefGroup = E28B6F5818AFC30100B2B312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E28B6F5618AFC30100B2B312 /* You'll Never Take Me Alive! */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E28B6F5518AFC30100B2B312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E281347218B807FB008B20D1 /* Preferences.xib in Resources */,
+				E2822D2A18BD878700977C0A /* yontma.iconset in Resources */,
+				E28B6F6518AFC30100B2B312 /* InfoPlist.strings in Resources */,
+				E28B90DF18C3D19B009030E4 /* StatusDisabled@2x.png in Resources */,
+				E209807518B63DE10070599F /* LaunchPlaceholder.xib in Resources */,
+				E28B6F7318AFC30100B2B312 /* Images.xcassets in Resources */,
+				E29CAB4E18B221B900B99B1E /* StatusEnabled.png in Resources */,
+				E28B6F6B18AFC30100B2B312 /* Credits.rtf in Resources */,
+				E28B90E018C3D19B009030E4 /* StatusEnabled@2x.png in Resources */,
+				E29CAB5118B22F8700B99B1E /* StatusDisabled.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E28B6F5318AFC30100B2B312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28B6F6E18AFC30100B2B312 /* yontmaAppDelegate.m in Sources */,
+				E26423C918B4103E00D796D0 /* Hibernator.m in Sources */,
+				E2D7834A18B2B1DD0094C86B /* ScreenSaverController.m in Sources */,
+				E21D289A18B65D0F00F30FB1 /* CommandRunner.m in Sources */,
+				E26423BD18B3C8B000D796D0 /* EthernetAdaptor.m in Sources */,
+				E26423C018B3DC9B00D796D0 /* EthernetAdaptorsDataSource.m in Sources */,
+				E2D2EB1518B6D63E0093D3FD /* PowerSettingsQuestionTextField.m in Sources */,
+				E26423D318B50A9C00D796D0 /* EventLogger.m in Sources */,
+				E2D7834D18B2B5150094C86B /* EthernetController.m in Sources */,
+				E26423CC18B414B600D796D0 /* EthernetAdaptorUtilities.m in Sources */,
+				E23EC96118B2914D0062D6FD /* PowerController.m in Sources */,
+				E2F0D71E18B581E3008EA793 /* LaptopSettingsController.m in Sources */,
+				E28B6F9018AFC38100B2B312 /* StatusBarIcon.m in Sources */,
+				E28B6F6718AFC30100B2B312 /* main.m in Sources */,
+				E281347118B79F67008B20D1 /* StartupLaunchController.m in Sources */,
+				E23EC95C18B26D790062D6FD /* PrefWindowController.m in Sources */,
+				E23EB64F18B5B6CD00536C2D /* LaptopErrorsDataSource.m in Sources */,
+				E26423C518B404B800D796D0 /* MetaController.m in Sources */,
+				E23EC95918B263A60062D6FD /* AppState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E28B6F6318AFC30100B2B312 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28B6F6418AFC30100B2B312 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E28B6F6918AFC30100B2B312 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28B6F6A18AFC30100B2B312 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E28B6F6F18AFC30100B2B312 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28B6F7018AFC30100B2B312 /* Base */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E28B6F8618AFC30100B2B312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
+			};
+			name = Debug;
+		};
+		E28B6F8718AFC30100B2B312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+		E28B6F8918AFC30100B2B312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "You'll Never Take Me Alive!/You'll Never Take Me Alive!-Prefix.pch";
+				INFOPLIST_FILE = "You'll Never Take Me Alive!/You'll Never Take Me Alive!-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E28B6F8A18AFC30100B2B312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "You'll Never Take Me Alive!/You'll Never Take Me Alive!-Prefix.pch";
+				INFOPLIST_FILE = "You'll Never Take Me Alive!/You'll Never Take Me Alive!-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E28B6F5218AFC30100B2B312 /* Build configuration list for PBXProject "You'll Never Take Me Alive!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28B6F8618AFC30100B2B312 /* Debug */,
+				E28B6F8718AFC30100B2B312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28B6F8818AFC30100B2B312 /* Build configuration list for PBXNativeTarget "You'll Never Take Me Alive!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28B6F8918AFC30100B2B312 /* Debug */,
+				E28B6F8A18AFC30100B2B312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E28B6F4F18AFC30100B2B312 /* Project object */;
+}
