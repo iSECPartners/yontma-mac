@@ -32,7 +32,7 @@
 +(Boolean) hasFileVault
 {
     NSString* output = [CommandRunner runTaskGetOutput:@"fdesetup status"];
-    if([output isEqualToString:@"FileVault is On.\n"])
+    if([output rangeOfString:@"FileVault is On"].location != NSNotFound)
         return true;
     return false;
 }
