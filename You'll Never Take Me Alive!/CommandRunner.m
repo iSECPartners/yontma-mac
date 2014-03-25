@@ -62,6 +62,14 @@
         NSError *error = [NSError errorWithDomain:NSOSStatusErrorDomain code:status userInfo:nil];
         [EventLogger Log:[NSString stringWithFormat:@"Could not execute privileged action: %@", error]];
     }
+    else
+    {
+        //Wait for the child process to complete, so we don't have a race condition.
+        //We can't wait on the child PID, because we don't know it, but we can wait
+        //  for all child processes, which will only be this child
+        int stat;
+        wait(&stat);
+    }
 }
 
 +(void) dropPrivileges
