@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "CommandRunner.h"
+#import "EventLogger.h"
+
 
 typedef NS_ENUM(NSInteger,  ErrorStates)
 {
     NoErrors = 0,
     FileVaultError = 1,
-    PowerSettingsError = 2
+    PowerSettingsError = 2,
+    CannotStandbyError = 3
 };
 
 @interface LaptopSettingsController : NSObject

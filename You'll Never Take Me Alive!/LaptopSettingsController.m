@@ -14,6 +14,9 @@
 {
     ErrorStates errors = NoErrors;
     
+    if(![LaptopSettingsController canStandby])
+        errors |= CannotStandbyError;
+    
     if([LaptopSettingsController hasWrongPMHibernateValue])
         errors |= PowerSettingsError;
     
@@ -27,6 +30,66 @@
         errors |= FileVaultError;
     
     return errors;
+}
+
++(Boolean) canStandby
+{
+    NSString* output = [CommandRunner runTaskGetOutput:@"sysctl hw.model"];
+    
+    NSString* model;
+    NSInteger majorVersion;
+    NSInteger minorVersion;
+    Boolean isRetina;
+    
+    NSArray *split = [output componentsSeparatedByString:@","];
+    if([split count] != 2)
+    {
+        [EventLogger Log:[NSString stringWithFormat:@"Got strange un-splitable model: %@", output]];
+        return false;
+    }
+    
+    //Reuse model variable
+    model = [split objectAtIndex:1];
+    minorVersion = [model integerValue];
+    
+    model = [split objectAtIndex:0];
+    model = [model substringFromIndex:[model length]-1];
+    majorVersion = [model integerValue];
+
+    model = [split objectAtIndex:0];
+    model = [model substringToIndex:[model length]-1];
+
+    isRetina = [[NSScreen mainScreen] backingScaleFactor] == 2.0f;
+
+    //From http://support.apple.com/kb/ht4392 and http://www.everymac.com/systems/by_capability/mac-specs-by-machine-model-machine-id.html
+    if([model rangeOfString:@"MacBookPro"].location != NSNotFound)
+    {
+        //MacBook Pro (Retina, Mid 2012)
+        if(majorVersion == 10 && isRetina)
+            return true;
+        
+        //Seems redundant
+        //MacBook Pro (Retina, 15-inch, Early 2013) and later
+        //if(majorVersion == 10 && minorVersion == 1 && is15Inch && isRetina)
+        //    return true;
+        //MacBook Pro (Retina, 13-inch, Late 2012) and later
+        //if(majorVersion == 10 && minorVersion == 2 && is13Inch && isRetina)
+        //    return true;
+        //'and later'
+        if(majorVersion >= 11)
+            return true;
+        
+        return false;
+    }
+    else if([model rangeOfString:@"MacBookAir"].location != NSNotFound)
+    {
+        //MacBook Air (Mid 2010) and later
+        if(majorVersion >= 3)
+            return true;
+        return false;
+    }
+    else
+        return false;
 }
 
 +(Boolean) hasFileVault

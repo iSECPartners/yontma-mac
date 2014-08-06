@@ -30,18 +30,26 @@
 {
     static NSString* ps = @"Power Settings are currently insecure";
     static NSString* fv = @"Disk Encryption (FileVault) is not enabled";
-    
-    if(self.errors & FileVaultError && self.errors & PowerSettingsError)
+    static NSString* stndby = @"Mac Model does not support standby";
+
+    if(row == 0)
     {
-        if(row == 0)
+        if(self.errors & FileVaultError)
+            return fv;
+        else if(self.errors & PowerSettingsError)
             return ps;
         else
-            return fv;
+            return stndby;
     }
-    else if(self.errors == FileVaultError)
-        return fv;
+    else if(row == 1)
+    {
+        if(self.errors & PowerSettingsError)
+            return ps;
+        else
+            return stndby;
+    }
     else
-        return ps;
+        return stndby;    
 }
 
 @end
