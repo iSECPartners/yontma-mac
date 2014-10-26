@@ -23,7 +23,8 @@
 {
     int c =
         (self.errors & FileVaultError ? 1 : 0) +
-        (self.errors & PowerSettingsError ? 1 : 0);
+        (self.errors & PowerSettingsError ? 1 : 0) +
+        (self.errors & CannotStandbyError ? 1 : 0);
     return c;
 }
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(int)row

@@ -30,7 +30,7 @@
 
 -(Boolean) hasErrors
 {
-    return self.hasFilevaultError || self.hasPowerSettingsError;
+    return self.hasFilevaultError || self.hasPowerSettingsError || self.cannotStandby;
 }
 
 

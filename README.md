@@ -11,7 +11,7 @@ YoNTMA runs as a status bar icon on FileVault-protected laptops. If the laptop i
 Binaries
 --------
 
-YoNTMA is available for Mac, and has been tested on 10.9 and a little bit on 10.8.
+YoNTMA is available for Mac, and has been tested on 10.10, 10.9 and a little bit on 10.8.
 
 * [YoNTMA (Mac) 0.9.9](https://github.com/iSECPartners/yontma-mac/releases/tag/0.9.9)
  * [dmg installer](https://github.com/iSECPartners/yontma-mac/releases/download/0.9.9/yontma-0.9.9.dmg) ([sig](https://github.com/iSECPartners/yontma-mac/releases/download/0.9.9/yontma-0.9.9.dmg.sig) [key](http://keyserver.ubuntu.com/pks/lookup?op=vindex&fingerprint=on&search=0xE578C0E157AD2E71))

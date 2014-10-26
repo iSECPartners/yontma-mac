@@ -18,6 +18,7 @@
     ErrorStates errors = [LaptopSettingsController getLaptopConfigurationErrors];
     [[AppState yontmaState] setHasFilevaultError:errors & FileVaultError];
     [[AppState yontmaState] setHasPowerSettingsError:errors & PowerSettingsError];
+    [[AppState yontmaState] setCannotStandby:errors & CannotStandbyError];
     
     [[AppState yontmaState] setRunAtStartup:[StartupLaunchController isLaunchAtStartup]];
     

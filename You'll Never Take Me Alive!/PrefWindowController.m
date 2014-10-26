@@ -81,6 +81,8 @@
             [[self correctPowerSettingsButton] setHidden:true];
         }
         
+        //We don't do anything if the model cannot standby, just put a row in the table
+        
         [self.errorTableContainer setHidden:false];
         [self.errorTable setHidden:false];
         self.currentErrors = [[LaptopErrorsDataSource alloc] initWithData:errors];
@@ -91,6 +93,7 @@
     {
         [[AppState yontmaState] setHasFilevaultError:false];
         [[AppState yontmaState] setHasPowerSettingsError:false];
+        [[AppState yontmaState] setCannotStandby:false];
         [self.enabledCheckbox setEnabled:true];
         [self.enabledCheckbox setState:[[AppState yontmaState] yontmaEnabled] ? 1 : 0];
         

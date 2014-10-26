@@ -29,6 +29,7 @@
 
 @property Boolean hasFilevaultError;
 @property Boolean hasPowerSettingsError;
+@property Boolean cannotStandby;
 -(Boolean) hasErrors;
 
 @property NSString* logfileName;

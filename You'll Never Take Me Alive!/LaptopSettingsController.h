@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger,  ErrorStates)
     NoErrors = 0,
     FileVaultError = 1,
     PowerSettingsError = 2,
-    CannotStandbyError = 3
+    CannotStandbyError = 4
 };
 
 @interface LaptopSettingsController : NSObject
