@@ -13,8 +13,8 @@ Binaries
 
 YoNTMA is available for Mac, and has been tested on 10.10, 10.9 and a little bit on 10.8.
 
-* [YoNTMA (Mac) 1.0.0](https://github.com/iSECPartners/yontma-mac/releases/tag/1.0.0)
- * [dmg installer](https://github.com/iSECPartners/yontma-mac/releases/download/1.0.0/yontma-1.0.0.dmg) ([sig](https://github.com/iSECPartners/yontma-mac/releases/download/1.0.0/yontma-1.0.0.dmg.sig) [key](http://keyserver.ubuntu.com/pks/lookup?op=vindex&fingerprint=on&search=0xE578C0E157AD2E71))
+* [YoNTMA (Mac) 1.0.1](https://github.com/iSECPartners/yontma-mac/releases/tag/1.0.1)
+ * [dmg installer](https://github.com/iSECPartners/yontma-mac/releases/download/1.0.1/yontma-1.0.1.dmg) ([sig](https://github.com/iSECPartners/yontma-mac/releases/download/1.0.1/yontma-1.0.1.dmg.sig) [key](http://keyserver.ubuntu.com/pks/lookup?op=vindex&fingerprint=on&search=0xE578C0E157AD2E71))
 
 [YoNTMA is also available for Windows](https://github.com/iSECPartners/yontma), in another Github project.
 
