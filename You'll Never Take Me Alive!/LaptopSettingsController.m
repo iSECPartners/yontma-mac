@@ -37,6 +37,7 @@
     NSString* output = [CommandRunner runTaskGetOutput:@"sysctl hw.model"];
     
     NSString* model;
+    NSInteger i;
     NSInteger majorVersion;
     NSInteger minorVersion;
     Boolean isRetina;
@@ -48,16 +49,25 @@
         return false;
     }
     
-    //Reuse model variable
+    //We're using the model variable as a temp here
     model = [split objectAtIndex:1];
+    //Grab the minor version after the comma
     minorVersion = [model integerValue];
     
+    //Now make model the value left of the comma
     model = [split objectAtIndex:0];
-    model = [model substringFromIndex:[model length]-1];
+    //Find the first non-digit from the back
+    i =[model length]-1;
+    while([[NSCharacterSet decimalDigitCharacterSet] characterIsMember:[model characterAtIndex:i]])
+        i--;
+    //Put that into model temprarily
+    model = [model substringFromIndex:i+1];
+    //And convert it to int
     majorVersion = [model integerValue];
 
+    //Now start again and assign the model correctly
     model = [split objectAtIndex:0];
-    model = [model substringToIndex:[model length]-1];
+    model = [model substringToIndex:i+1];
 
     isRetina = [[NSScreen mainScreen] backingScaleFactor] == 2.0f;
 
