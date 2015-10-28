@@ -98,6 +98,13 @@
             return true;
         return false;
     }
+    else if([model rangeOfString:@"MacBook"].location != NSNotFound)
+    {
+        //MacBook (2015) and later
+        if(majorVersion >= 8)
+            return true;
+        return false;
+    }
     else
         return false;
 }
